@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "lungeswap",
+  "version": "${version}",
+  "name": "Ressurection",
+  "description": "Hold a hotkey to auto click and swap to your spear and back. Delay (5-100 ticks) is configurable in Mod Menu.",
+  "authors": ["_iniq"],
+  "license": "CC0-1.0",
+  "icon": "assets/lungeswap/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.lungeswap.LungeSwapClient"],
+    "modmenu": ["com.lungeswap.ModMenuIntegration"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": { "modmenu": "*" }
+}
